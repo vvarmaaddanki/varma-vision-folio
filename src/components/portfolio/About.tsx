@@ -4,7 +4,7 @@ import { GraduationCap, Zap, Users, Code2 } from "lucide-react";
 const stats = [
   { icon: Zap, label: "ENTRY LEVEL", value: "Fresher" },
   { icon: GraduationCap, label: "B.Tech CSE", value: "AI & ML" },
-  { icon: Code2, label: "Graduation", value: "2026" },
+  { icon: Code2, label: "Graduation", value: "2025" },
   { icon: Users, label: "Traits", value: "Team Player" },
 ];
 
