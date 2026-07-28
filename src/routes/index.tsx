@@ -1,24 +1,56 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/portfolio/Navbar";
+import { Hero } from "@/components/portfolio/Hero";
+import { About } from "@/components/portfolio/About";
+import { Skills } from "@/components/portfolio/Skills";
+import { Projects } from "@/components/portfolio/Projects";
+import { Education } from "@/components/portfolio/Education";
+import { Goals } from "@/components/portfolio/Goals";
+import { Contact } from "@/components/portfolio/Contact";
+import { Footer } from "@/components/portfolio/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Addanki Venkatesh Varma — Full Stack Developer" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Addanki Venkatesh Varma — Full Stack Developer specializing in React, Java, Spring Boot, and Node.js. Building the future with code.",
+      },
+      { property: "og:title", content: "Addanki Venkatesh Varma — Full Stack Developer" },
+      { property: "og:description", content: "Cyberpunk-styled portfolio showcasing full-stack projects, skills, and experience." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen overflow-x-hidden">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Goals />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster theme="dark" />
     </div>
   );
 }
