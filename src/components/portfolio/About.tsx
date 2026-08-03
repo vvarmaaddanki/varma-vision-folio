@@ -23,17 +23,30 @@ export function About() {
           <Reveal>
             <div className="glass rounded-2xl p-8">
               <p className="text-lg leading-relaxed text-foreground/90">
-                Hi, I'm <span className="text-gradient font-semibold">Venkatesh Varma Addanki</span>, a passionate Full Stack Developer focused on building modern, scalable, and user-friendly web applications. I enjoy turning ideas into real digital solutions through clean code and creative design.
+                Hi, I'm <span className="text-gradient font-semibold">Venkatesh Varma Addanki</span>, an aspiring Data Analyst with a strong foundation in Excel, SQL, Python (Pandas & NumPy), Power BI, Tableau, and Statistics. I'm passionate about transforming raw data into actionable insights through analysis, visualization, and interactive dashboards that support business decision-making.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Currently, I am continuously learning and improving my skills in both frontend and backend technologies to become an industry-ready developer.
+                <span className="text-foreground/90 font-medium">What I do:</span>
+              </p>
+              <ul className="mt-2 space-y-2 leading-relaxed text-muted-foreground">
+                <li className="flex gap-2"><span className="text-primary">→</span> Build and ship production-grade web applications (React + Node.js + PostgreSQL)</li>
+                <li className="flex gap-2"><span className="text-primary">→</span> Design data pipelines and analytics dashboards (Python + Power BI + SQL)</li>
+                <li className="flex gap-2"><span className="text-primary">→</span> Translate business problems into working technical solutions</li>
+              </ul>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                Currently: Actively building projects at the intersection of AI and full-stack development. Open to Full Stack Engineer, Data Analyst, Business Analyst, Power BI Developer, Python Developer, and Forward-Deployed Engineer roles at companies using AI to solve real problems.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {["Fast Learner", "Team Player", "Problem Solver", "Curious", "Detail Oriented"].map((t) => (
+                {["Data Analysis", "Power BI", "SQL", "Python", "React", "Problem Solver", "Detail Oriented"].map((t) => (
                   <span key={t} className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs text-foreground/90">
                     {t}
                   </span>
                 ))}
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3 text-sm">
+                <a href="https://github.com/vvarmaaddanki" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-primary/20 bg-primary/10 px-4 py-2 text-primary transition-all hover:shadow-neon hover:-translate-y-0.5">📌 GitHub</a>
+                <a href="https://vvarmaaddanki.github.io/varma-vision-folio" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-xl border border-primary/20 bg-primary/10 px-4 py-2 text-primary transition-all hover:shadow-neon hover:-translate-y-0.5">🖇️ Portfolio</a>
+                <a href="mailto:varmakbm9@gmail.com" className="inline-flex items-center gap-2 rounded-xl border border-primary/20 bg-primary/10 px-4 py-2 text-primary transition-all hover:shadow-neon hover:-translate-y-0.5">📩 Email</a>
               </div>
             </div>
           </Reveal>
