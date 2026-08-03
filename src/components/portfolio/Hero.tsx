@@ -23,7 +23,7 @@ export function Hero() {
             <span className="text-gradient">VENKATESH VARMA</span>
           </h1>
           <p className="mt-4 font-mono text-lg text-foreground/80 sm:text-xl">
-            Full Stack Developer
+            Data Analyst
           </p>
           <p className="mt-1 text-sm text-muted-foreground italic">
             Building Future with Code
@@ -74,12 +74,12 @@ export function Hero() {
                 <span className="ml-3 text-xs text-muted-foreground">~/venkatesh.dev</span>
               </div>
               <pre className="whitespace-pre-wrap leading-relaxed text-foreground/90">
-{`const dev = {
+{`const analyst = {
   name: "Venkatesh Varma",
-  role: "Full Stack Developer",
-  stack: ["React","Java","Spring",
-          "Node","MongoDB","MySQL"],
-  focus: "Scalable Web Apps",
+  role: "Data Analyst",
+  stack: ["Excel","SQL","Python",
+          "Power BI","Tableau","Stats"],
+  focus: "Data-Driven Insights",
   learning: true,
 };`}
               </pre>
