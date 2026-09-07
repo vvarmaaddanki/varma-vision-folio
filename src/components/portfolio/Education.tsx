@@ -4,10 +4,10 @@ import { GraduationCap, School, Target } from "lucide-react";
 const items = [
   {
     icon: GraduationCap,
-    period: "2022 — 2026",
+    period: "Graduated 2025",
     title: "B.Tech, Computer Science Engineering",
     org: "Specialization: Artificial Intelligence & Machine Learning",
-    detail: "Building strong foundations in DSA, OOP, databases, and full-stack web engineering while exploring applied AI/ML.",
+    detail: "Strong foundations in DSA, OOP, databases, backend engineering, and applied AI/ML.",
   },
   {
     icon: School,
@@ -20,8 +20,8 @@ const items = [
     icon: Target,
     period: "Ongoing",
     title: "Self-Directed Learning",
-    org: "React, Spring Boot, System Design",
-    detail: "Continuous learning through personal projects, open-source contributions, and hands-on practice.",
+    org: "Python, Django, REST APIs, AI Integration",
+    detail: "Continuous learning through backend projects, data applications, and hands-on software development practice.",
   },
 ];
 

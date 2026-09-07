@@ -14,14 +14,14 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Addanki Venkatesh Varma — Full Stack Developer" },
+      { title: "Venkatesh Varma Addanki | Backend Developer | Python & Django" },
       {
         name: "description",
         content:
-          "Portfolio of Addanki Venkatesh Varma — Full Stack Developer specializing in React, Java, Spring Boot, and Node.js. Building the future with code.",
+          "Venkatesh Varma Addanki — Backend Developer specializing in Python, Django, REST APIs, SQL, AI-powered applications, databases, and data-driven solutions.",
       },
-      { property: "og:title", content: "Addanki Venkatesh Varma — Full Stack Developer" },
-      { property: "og:description", content: "Cyberpunk-styled portfolio showcasing full-stack projects, skills, and experience." },
+      { property: "og:title", content: "Venkatesh Varma Addanki | Backend Developer" },
+      { property: "og:description", content: "Backend Developer specializing in Python, Django, REST APIs, SQL, AI applications, and database-driven solutions." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

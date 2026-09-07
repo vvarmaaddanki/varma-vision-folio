@@ -23,20 +23,21 @@ export function Hero() {
             <span className="text-gradient">VENKATESH VARMA</span>
           </h1>
           <p className="mt-4 font-mono text-lg text-foreground/80 sm:text-xl">
-            Python Backend Engineer
+            Backend Developer | Python | Django | REST APIs
           </p>
           <p className="mt-1 text-sm text-muted-foreground italic">
-            Building Future with Code
+            Building scalable systems with code
           </p>
 
           <div className="mt-6 flex min-h-[2.5rem] items-center gap-2 text-xl sm:text-2xl">
             <span className="text-muted-foreground">&gt;</span>
             <Typewriter
               words={[
-                "Software Engineer",
+                "Backend Developer",
                 "Python Developer",
-                "Problem Solver",
-                "Data Analyst",
+                "Django Developer",
+                "REST API Developer",
+                "AI Application Developer",
               ]}
             />
           </div>
@@ -74,12 +75,12 @@ export function Hero() {
                 <span className="ml-3 text-xs text-muted-foreground">~/venkatesh.dev</span>
               </div>
               <pre className="whitespace-pre-wrap leading-relaxed text-foreground/90">
-{`const analyst = {
+ {`const developer = {
   name: "Venkatesh Varma",
-  role: "Data Analyst",
-  stack: ["Excel","SQL","Python",
-          "Power BI","Tableau","Stats"],
-  focus: "Data-Driven Insights",
+  role: "Backend Developer",
+  stack: ["Python","Django","REST APIs",
+          "PostgreSQL","AI / LLM"],
+  focus: "Scalable Backend Systems",
   learning: true,
 };`}
               </pre>

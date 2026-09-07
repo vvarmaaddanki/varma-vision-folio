@@ -23,16 +23,11 @@ export function About() {
           <Reveal>
             <div className="glass rounded-2xl p-8">
               <p className="text-lg leading-relaxed text-foreground/90">
-                My personal portfolio — built to show work, not just list it. Covers my backend projects (<span className="text-gradient font-semibold">Django · DRF · Flask · PostgreSQL</span>), AI/LLM integrations (<span className="text-gradient font-semibold">LangChain · OpenAI</span>), and data engineering work — each with context on what I built, why, and how. If you're hiring for Python Backend or Software Engineer roles, this is the fastest way to see what I actually ship.
+                I am a Backend Developer with hands-on experience building <span className="text-gradient font-semibold">Python and Django applications, REST APIs, database-driven systems, and AI-powered solutions</span>. I enjoy transforming real-world requirements into reliable, scalable, and user-friendly applications.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                <span className="text-foreground/90 font-medium">What I do:</span>
+                My project experience includes AI-powered database applications, advanced SQL analytics, NLP-based sentiment analysis, and interactive business intelligence dashboards. I continuously strengthen my skills in backend engineering, databases, APIs, AI integration, and modern software development practices.
               </p>
-              <ul className="mt-2 space-y-2 leading-relaxed text-muted-foreground">
-                <li className="flex gap-2"><span className="text-primary">→</span> Build and ship production-grade web applications (React + Node.js + PostgreSQL)</li>
-                <li className="flex gap-2"><span className="text-primary">→</span> Design data pipelines and analytics dashboards (Python + Power BI + SQL)</li>
-                <li className="flex gap-2"><span className="text-primary">→</span> Translate business problems into working technical solutions</li>
-              </ul>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 📍 Bengaluru · Open to Work
               </p>

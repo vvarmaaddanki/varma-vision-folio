@@ -32,7 +32,7 @@ export function Contact() {
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Have a role, project, or idea in mind? Drop a message — I'll respond within 24 hours.
+            Interested in collaborating or discussing opportunities? Feel free to connect with me.
           </p>
         </Reveal>
 
