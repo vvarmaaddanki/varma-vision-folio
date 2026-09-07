@@ -23,7 +23,7 @@ export function About() {
           <Reveal>
             <div className="glass rounded-2xl p-8">
               <p className="text-lg leading-relaxed text-foreground/90">
-                Hi, I'm <span className="text-gradient font-semibold">Venkatesh Varma Addanki</span>, a 2025 B.Tech graduate seeking Python Backend Engineer or Software Engineer roles where I can build production APIs, integrate AI/LLM systems, and ship real features alongside a driven engineering team. I bring strong fundamentals, real project experience, and the drive to grow fast.
+                My personal portfolio — built to show work, not just list it. Covers my backend projects (<span className="text-gradient font-semibold">Django · DRF · Flask · PostgreSQL</span>), AI/LLM integrations (<span className="text-gradient font-semibold">LangChain · OpenAI</span>), and data engineering work — each with context on what I built, why, and how. If you're hiring for Python Backend or Software Engineer roles, this is the fastest way to see what I actually ship.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 <span className="text-foreground/90 font-medium">What I do:</span>
