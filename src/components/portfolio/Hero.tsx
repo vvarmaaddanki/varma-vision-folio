@@ -23,7 +23,7 @@ export function Hero() {
             <span className="text-gradient">VENKATESH VARMA</span>
           </h1>
           <p className="mt-4 font-mono text-lg text-foreground/80 sm:text-xl">
-            Data Analyst
+            Python Backend Engineer
           </p>
           <p className="mt-1 text-sm text-muted-foreground italic">
             Building Future with Code
