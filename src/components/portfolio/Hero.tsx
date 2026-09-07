@@ -55,7 +55,7 @@ export function Hero() {
               <Download size={16} /> Download Resume
             </a>
             <a
-              href="#contact"
+              href="mailto:varmakbm9@gmail.com"
               className="inline-flex items-center gap-2 rounded-full border border-primary/40 px-6 py-3 text-sm font-semibold text-foreground transition-all hover:bg-primary/10 hover:shadow-neon"
             >
               <Mail size={16} /> Contact Me
