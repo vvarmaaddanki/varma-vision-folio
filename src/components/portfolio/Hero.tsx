@@ -33,10 +33,10 @@ export function Hero() {
             <span className="text-muted-foreground">&gt;</span>
             <Typewriter
               words={[
-                "Data Analyst",
-                "Django Developer",
-                "Problem Solver",
                 "Software Engineer",
+                "Python Developer",
+                "Problem Solver",
+                "Data Analyst",
               ]}
             />
           </div>
