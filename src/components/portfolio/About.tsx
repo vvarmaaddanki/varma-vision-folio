@@ -34,7 +34,7 @@ export function About() {
                 <li className="flex gap-2"><span className="text-primary">→</span> Translate business problems into working technical solutions</li>
               </ul>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Currently: Actively building projects at the intersection of AI and full-stack development. Open to Full Stack Engineer, Data Analyst, Business Analyst, Power BI Developer, Python Developer, and Forward-Deployed Engineer roles at companies using AI to solve real problems.
+                📍 Bengaluru · Open to Work
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {["Python", "Django", "REST APIs", "PostgreSQL", "LangChain", "OpenAI", "Docker", "Problem Solver"].map((t) => (
