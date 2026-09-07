@@ -2,7 +2,7 @@ import { Reveal } from "./Reveal";
 import { GraduationCap, Zap, Users, Code2 } from "lucide-react";
 
 const stats = [
-  { icon: Zap, label: "ENTRY LEVEL", value: "Fresher" },
+  { icon: Zap, label: "EXPERIENCE", value: "Entry Level" },
   { icon: GraduationCap, label: "B.Tech CSE", value: "AI & ML" },
   { icon: Code2, label: "Graduation", value: "2025" },
   { icon: Users, label: "Traits", value: "Team Player" },
