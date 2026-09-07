@@ -37,7 +37,7 @@ export function About() {
                 Currently: Actively building projects at the intersection of AI and full-stack development. Open to Full Stack Engineer, Data Analyst, Business Analyst, Power BI Developer, Python Developer, and Forward-Deployed Engineer roles at companies using AI to solve real problems.
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {["Data Analysis", "Power BI", "SQL", "Python", "React", "Problem Solver", "Detail Oriented"].map((t) => (
+                {["Python", "Django", "REST APIs", "PostgreSQL", "LangChain", "OpenAI", "Docker", "Problem Solver"].map((t) => (
                   <span key={t} className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs text-foreground/90">
                     {t}
                   </span>
