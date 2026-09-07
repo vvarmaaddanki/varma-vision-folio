@@ -55,7 +55,7 @@ export function Skills() {
             Tech <span className="text-gradient">Arsenal</span>
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            A blend of frontend, backend, database, and tooling — the stack I use to ship modern applications end-to-end.
+            Python backend engineering, AI/LLM integration, data pipelines, and DevOps — the stack I use to ship production systems end-to-end.
           </p>
         </Reveal>
 
