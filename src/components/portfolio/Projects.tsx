@@ -3,33 +3,71 @@ import { ExternalLink, Github, Sparkles } from "lucide-react";
 
 const projects = [
   {
-    title: "Blinkit Sales Analysis",
-    subtitle: "Power BI • Python • ML",
+    number: "01",
+    title: "AI Database Copilot",
+    subtitle: "AI / Backend / Generative AI",
     description:
-      "End-to-end sales analysis dashboard for Blinkit, powered by Python and LightGBM with SHAP explainability. Interactive Power BI dashboard surfaces category, outlet, and item-level insights for data-driven decisions.",
-    tags: ["Python", "Machine Learning", "LightGBM", "SHAP", "Power BI"],
+      "An AI-powered database assistant that enables users to interact with structured data using natural language. The application combines AI/LLM integration with backend APIs and database connectivity to help users generate database queries, execute them, and understand the resulting data through an interactive interface.",
+    highlights: [
+      "Natural-language database interaction",
+      "AI-assisted SQL/query generation",
+      "Database connectivity and query execution",
+      "AI-powered responses",
+      "Backend API architecture",
+      "Input validation and error handling",
+      "Production deployment",
+    ],
+    tags: ["Python", "Django", "REST API", "SQL", "AI/LLM", "Prompt Engineering", "Database Integration", "Git", "GitHub", "Render"],
+    liveDemo: "https://ai-database-copilot-t1ss.onrender.com",
     featured: true,
   },
   {
-    title: "E-Commerce Web App",
-    subtitle: "Coming soon",
+    number: "02",
+    title: "E-Commerce Funnel & Cohort Analysis",
+    subtitle: "Data Analytics / Advanced SQL",
     description:
-      "Full-stack shopping platform with cart, checkout, and admin panel. Built with React, Spring Boot, and MySQL.",
-    tags: ["React", "Spring Boot", "MySQL"],
+      "An advanced SQL analytics project focused on understanding e-commerce customer behavior, conversion funnels, retention, churn, and revenue performance. The project transforms transactional data into actionable business insights using complex SQL queries, cohort analysis, customer segmentation, and KPI analysis.",
+    highlights: [
+      "Revenue and Average Order Value analysis",
+      "Customer cohort and retention analysis",
+      "Churn and conversion funnel analysis",
+      "Customer behavior analysis",
+      "Business KPI reporting",
+    ],
+    tags: ["SQL Server", "T-SQL", "CTEs", "Subqueries", "Window Functions", "Cohort Analysis", "Data Analysis", "Relational Databases"],
+    github: "https://github.com/vvarmaaddanki/E-commerce-funnel-and-cohort-analysis",
   },
   {
-    title: "Task Management System",
-    subtitle: "Coming soon",
+    number: "03",
+    title: "Sentiment Analysis on Social Media",
+    subtitle: "Machine Learning / NLP",
     description:
-      "Kanban-style productivity tool with authentication, real-time updates, and team collaboration.",
-    tags: ["Node.js", "Express", "MongoDB"],
+      "An end-to-end Natural Language Processing project that analyzes social media content to identify sentiment and uncover patterns in audience behavior. The pipeline includes text preprocessing, sentiment classification, visualization, and interpretation of sentiment trends.",
+    highlights: [
+      "Social media data analysis",
+      "Text cleaning, tokenization, and stopword removal",
+      "Sentiment classification",
+      "Positive / Negative / Neutral analysis",
+      "Sentiment trend visualization",
+      "NLP-based insights",
+    ],
+    tags: ["Python", "Pandas", "NumPy", "NLTK", "spaCy", "Scikit-learn", "Tweepy", "Plotly", "Matplotlib", "Jupyter Notebook"],
+    github: "https://github.com/vvarmaaddanki/Sentiment-analysis-on-social-media",
   },
   {
-    title: "Portfolio Website",
-    subtitle: "This site",
+    number: "04",
+    title: "Blinkit Sales Analytics Dashboard",
+    subtitle: "Business Intelligence / Power BI",
     description:
-      "Cyberpunk-inspired personal portfolio built with React and Tailwind CSS — animations, glassmorphism, and neon accents.",
-    tags: ["React", "Tailwind", "TypeScript"],
+      "An interactive Power BI analytics solution developed to analyze retail sales performance across products, outlets, outlet sizes, and locations. The project includes data cleaning, transformation, data modeling, DAX-based KPI development, and interactive dashboard design to support data-driven business decisions.",
+    highlights: [
+      "Total Sales, Average Sales, Average Rating, and Item Count KPIs",
+      "Product category and outlet performance analysis",
+      "Outlet size and location-based analysis",
+      "Power Query transformations",
+      "DAX measures and interactive dashboard filtering",
+    ],
+    tags: ["Power BI", "DAX", "Power Query", "Data Cleaning", "Data Modeling", "Business Intelligence", "Data Visualization"],
   },
 ];
 
@@ -40,8 +78,11 @@ export function Projects() {
         <Reveal>
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">03 / projects</p>
           <h2 className="mt-3 text-4xl font-bold sm:text-5xl">
-            Featured <span className="text-gradient">Work</span>
+            Featured <span className="text-gradient">Projects</span>
           </h2>
+          <p className="mt-3 max-w-3xl text-muted-foreground">
+            Selected projects demonstrating my experience in backend development, AI applications, databases, machine learning, and business intelligence.
+          </p>
         </Reveal>
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
@@ -58,28 +99,39 @@ export function Projects() {
                 </div>
 
                 <div className="relative flex items-start justify-between gap-4">
-                  <div>
+                  <div className="min-w-0">
                     <div className="flex items-center gap-2">
-                      {p.featured && <Sparkles size={14} className="text-primary" />}
-                      <p className="font-mono text-xs uppercase tracking-wider text-primary">{p.subtitle}</p>
+                      {p.featured && <Sparkles size={14} className="shrink-0 text-primary" />}
+                      <span className="font-mono text-xs text-primary">PROJECT {p.number}</span>
                     </div>
                     <h3 className="mt-2 font-display text-2xl font-bold">{p.title}</h3>
+                    <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted-foreground">{p.subtitle}</p>
                   </div>
-                  <div className="flex gap-2">
-                    <a
-                      href="#"
-                      className="glass grid h-9 w-9 place-items-center rounded-full text-muted-foreground transition-all hover:text-primary hover:shadow-neon"
-                      aria-label="GitHub"
-                    >
-                      <Github size={16} />
-                    </a>
-                    <a
-                      href="#"
-                      className="glass grid h-9 w-9 place-items-center rounded-full text-muted-foreground transition-all hover:text-primary hover:shadow-neon"
-                      aria-label="Live"
-                    >
-                      <ExternalLink size={16} />
-                    </a>
+                  <div className="flex shrink-0 gap-2">
+                    {p.github && (
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="glass grid h-9 w-9 place-items-center rounded-full text-muted-foreground transition-all hover:text-primary hover:shadow-neon"
+                        aria-label={`View ${p.title} on GitHub`}
+                        title="View on GitHub"
+                      >
+                        <Github size={16} />
+                      </a>
+                    )}
+                    {p.liveDemo && (
+                      <a
+                        href={p.liveDemo}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="glass grid h-9 w-9 place-items-center rounded-full text-muted-foreground transition-all hover:text-primary hover:shadow-neon"
+                        aria-label={`View live demo of ${p.title}`}
+                        title="View Live Demo"
+                      >
+                        <ExternalLink size={16} />
+                      </a>
+                    )}
                   </div>
                 </div>
 
@@ -92,6 +144,30 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
+
+                <details className="relative mt-5 border-t border-primary/10 pt-4">
+                  <summary className="cursor-pointer font-mono text-xs uppercase tracking-widest text-primary">View Details</summary>
+                  <ul className="mt-4 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2">
+                    {p.highlights.map((highlight) => (
+                      <li key={highlight} className="flex gap-2">
+                        <span className="text-primary">→</span>
+                        <span>{highlight}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    {p.liveDemo && (
+                      <a href={p.liveDemo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-4 py-2 text-xs font-semibold text-primary-foreground shadow-neon transition-all hover:shadow-neon-strong">
+                        View Live Demo <ExternalLink size={14} />
+                      </a>
+                    )}
+                    {p.github && (
+                      <a href={p.github} target="_blank" rel="noreferrer" className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold text-foreground transition-all hover:text-primary hover:shadow-neon">
+                        View on GitHub <Github size={14} />
+                      </a>
+                    )}
+                  </div>
+                </details>
               </article>
             </Reveal>
           ))}

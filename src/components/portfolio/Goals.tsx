@@ -3,9 +3,9 @@ import { Rocket, Target, Sparkles } from "lucide-react";
 
 export function Goals() {
   const cards = [
-    { icon: Rocket, title: "Contribute", text: "Ship real, impactful software as part of a driven engineering team." },
-    { icon: Target, title: "Learn", text: "Master modern full-stack, cloud, and system design at production scale." },
-    { icon: Sparkles, title: "Grow", text: "Evolve into a well-rounded engineer who bridges code, product, and users." },
+    { icon: Rocket, title: "Build", text: "Create scalable Python and Django applications that solve practical problems." },
+    { icon: Target, title: "Engineer", text: "Design reliable REST APIs and database-driven systems for real users." },
+    { icon: Sparkles, title: "Integrate", text: "Bring AI technologies into useful, production-minded software solutions." },
   ];
   return (
     <section id="goals" className="relative py-24">
@@ -20,7 +20,9 @@ export function Goals() {
         <Reveal delay={100}>
           <div className="glass neon-border mt-10 rounded-2xl p-8">
             <p className="text-lg leading-relaxed text-foreground/90">
-              Seeking opportunities as a <span className="text-gradient font-semibold">Full Stack Developer</span> where I can contribute, learn, and grow by building impactful software solutions. As a fresher, I bring curiosity, discipline, and a strong drive to turn ideas into real products.
+              <span className="text-gradient font-semibold">Career Goal</span>
+              <br />
+              To grow as a Backend Developer by building scalable Python and Django applications, designing reliable REST APIs, working with databases, and integrating AI technologies into practical software solutions.
             </p>
           </div>
         </Reveal>

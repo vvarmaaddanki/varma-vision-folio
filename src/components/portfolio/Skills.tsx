@@ -2,44 +2,54 @@ import { Reveal } from "./Reveal";
 
 const groups = [
   {
-    title: "Python Backend",
+    title: "Backend Development",
     items: [
       { name: "Python", level: 95 },
       { name: "Django", level: 88 },
       { name: "Django REST Framework", level: 88 },
-      { name: "Flask", level: 80 },
-      { name: "FastAPI", level: 70 },
-      { name: "Celery", level: 75 },
-    ],
-  },
-  {
-    title: "AI / LLM Stack",
-    items: [
-      { name: "LangChain", level: 80 },
-      { name: "OpenAI API", level: 82 },
-      { name: "NLP", level: 75 },
-      { name: "Scikit-learn", level: 78 },
-      { name: "Prompt Engineering", level: 72 },
-    ],
-  },
-  {
-    title: "Database & Data",
-    items: [
-      { name: "PostgreSQL", level: 85 },
-      { name: "SQL Server", level: 78 },
-      { name: "SQL", level: 88 },
-      { name: "Pandas", level: 82 },
-      { name: "Power BI", level: 80 },
-    ],
-  },
-  {
-    title: "DevOps & Tools",
-    items: [
-      { name: "Docker", level: 75 },
-      { name: "Git & GitHub", level: 90 },
       { name: "REST APIs", level: 88 },
-      { name: "Postman", level: 85 },
-      { name: "Linux", level: 70 },
+      { name: "API Development", level: 85 },
+      { name: "Backend Development", level: 90 },
+    ],
+  },
+  {
+    title: "Databases",
+    items: [
+      { name: "SQL", level: 88 },
+      { name: "PostgreSQL", level: 85 },
+      { name: "MySQL", level: 78 },
+      { name: "Database Design", level: 82 },
+      { name: "Query Optimization", level: 80 },
+    ],
+  },
+  {
+    title: "AI & Data",
+    items: [
+      { name: "AI/LLM Integration", level: 82 },
+      { name: "Prompt Engineering", level: 78 },
+      { name: "NLP", level: 75 },
+      { name: "Pandas", level: 82 },
+      { name: "NumPy", level: 80 },
+      { name: "Scikit-learn", level: 78 },
+    ],
+  },
+  {
+    title: "Analytics & BI",
+    items: [
+      { name: "Power BI", level: 80 },
+      { name: "DAX", level: 76 },
+      { name: "Power Query", level: 78 },
+      { name: "Data Modeling", level: 78 },
+    ],
+  },
+  {
+    title: "Tools & Deployment",
+    items: [
+      { name: "Git", level: 90 },
+      { name: "GitHub", level: 90 },
+      { name: "Docker", level: 75 },
+      { name: "Render", level: 72 },
+      { name: "Git Bash", level: 82 },
     ],
   },
 ];
@@ -55,11 +65,11 @@ export function Skills() {
             Tech <span className="text-gradient">Arsenal</span>
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            Python backend engineering, AI/LLM integration, data pipelines, and DevOps — the stack I use to ship production systems end-to-end.
+            A practical toolkit for building Python backends, integrating AI, working with data, and deploying reliable applications.
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {groups.map((g, gi) => (
             <Reveal key={g.title} delay={gi * 100}>
               <div className="glass group h-full rounded-2xl p-6 transition-all hover:shadow-neon">
