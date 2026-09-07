@@ -37,7 +37,7 @@ export function About() {
                 📍 Bengaluru · Open to Work
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
-                {["Python", "Django", "REST APIs", "PostgreSQL", "LangChain", "OpenAI", "Docker", "Problem Solver"].map((t) => (
+                {["Python Backend Engineer", "Django & DRF Developer", "AI/LLM App Builder", "Problem Solver"].map((t) => (
                   <span key={t} className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs text-foreground/90">
                     {t}
                   </span>
