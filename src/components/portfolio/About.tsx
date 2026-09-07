@@ -23,7 +23,7 @@ export function About() {
           <Reveal>
             <div className="glass rounded-2xl p-8">
               <p className="text-lg leading-relaxed text-foreground/90">
-                Hi, I'm <span className="text-gradient font-semibold">Venkatesh Varma Addanki</span>, an aspiring Data Analyst with a strong foundation in Excel, SQL, Python (Pandas & NumPy), Power BI, Tableau, and Statistics. I'm passionate about transforming raw data into actionable insights through analysis, visualization, and interactive dashboards that support business decision-making.
+                Hi, I'm <span className="text-gradient font-semibold">Venkatesh Varma Addanki</span>, a 2025 B.Tech graduate seeking Python Backend Engineer or Software Engineer roles where I can build production APIs, integrate AI/LLM systems, and ship real features alongside a driven engineering team. I bring strong fundamentals, real project experience, and the drive to grow fast.
               </p>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 <span className="text-foreground/90 font-medium">What I do:</span>
