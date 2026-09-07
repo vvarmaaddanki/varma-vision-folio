@@ -2,39 +2,44 @@ import { Reveal } from "./Reveal";
 
 const groups = [
   {
-    title: "Frontend",
+    title: "Python Backend",
     items: [
-      { name: "HTML5", level: 92 },
-      { name: "CSS3", level: 88 },
-      { name: "JavaScript", level: 85 },
-      { name: "React", level: 82 },
-      { name: "Tailwind CSS", level: 88 },
-      { name: "Bootstrap", level: 80 },
+      { name: "Python", level: 95 },
+      { name: "Django", level: 88 },
+      { name: "Django REST Framework", level: 88 },
+      { name: "Flask", level: 80 },
+      { name: "FastAPI", level: 70 },
+      { name: "Celery", level: 75 },
     ],
   },
   {
-    title: "Backend",
+    title: "AI / LLM Stack",
     items: [
-      { name: "Java", level: 85 },
-      { name: "Spring Boot", level: 75 },
-      { name: "Node.js", level: 78 },
-      { name: "Express.js", level: 76 },
+      { name: "LangChain", level: 80 },
+      { name: "OpenAI API", level: 82 },
+      { name: "NLP", level: 75 },
+      { name: "Scikit-learn", level: 78 },
+      { name: "Prompt Engineering", level: 72 },
     ],
   },
   {
-    title: "Database",
+    title: "Database & Data",
     items: [
-      { name: "MySQL", level: 82 },
-      { name: "MongoDB", level: 78 },
+      { name: "PostgreSQL", level: 85 },
+      { name: "SQL Server", level: 78 },
+      { name: "SQL", level: 88 },
+      { name: "Pandas", level: 82 },
+      { name: "Power BI", level: 80 },
     ],
   },
   {
-    title: "Tools & Others",
+    title: "DevOps & Tools",
     items: [
-      { name: "Git & GitHub", level: 85 },
-      { name: "REST APIs", level: 82 },
-      { name: "VS Code", level: 92 },
-      { name: "OOP / DSA", level: 80 },
+      { name: "Docker", level: 75 },
+      { name: "Git & GitHub", level: 90 },
+      { name: "REST APIs", level: 88 },
+      { name: "Postman", level: 85 },
+      { name: "Linux", level: 70 },
     ],
   },
 ];
@@ -50,7 +55,7 @@ export function Skills() {
             Tech <span className="text-gradient">Arsenal</span>
           </h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
-            A blend of frontend, backend, database, and tooling — the stack I use to ship modern applications end-to-end.
+            Python backend engineering, AI/LLM integration, data pipelines, and DevOps — the stack I use to ship production systems end-to-end.
           </p>
         </Reveal>
 
