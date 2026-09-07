@@ -36,7 +36,7 @@ export function Hero() {
                 "Data Analyst",
                 "Django Developer",
                 "Problem Solver",
-                "AI Enthusiast",
+                "Software Engineer",
               ]}
             />
           </div>
